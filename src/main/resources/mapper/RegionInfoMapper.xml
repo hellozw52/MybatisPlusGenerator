@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zw.generator.mapper.RegionInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.zw.generator.entity.RegionInfo">
+    <result column="id" property="id" />
+        <result column="region_id" property="regionId" />
+        <result column="region_name" property="regionName" />
+        <result column="region_short_name" property="regionShortName" />
+        <result column="region_super_id" property="regionSuperId" />
+        <result column="region_lon" property="regionLon" />
+        <result column="region_lat" property="regionLat" />
+        <result column="region_sort" property="regionSort" />
+        <result column="region_create_time" property="regionCreateTime" />
+        <result column="region_modify_time" property="regionModifyTime" />
+        <result column="region_remark" property="regionRemark" />
+        <result column="region_state" property="regionState" />
+        <result column="region_tenant_id" property="regionTenantId" />
+        <result column="region_level" property="regionLevel" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id,
+        region_id, region_name, region_short_name, region_super_id, region_lon, region_lat, region_sort, region_create_time, region_modify_time, region_remark, region_state, region_tenant_id, region_level
+    </sql>
+
+</mapper>
